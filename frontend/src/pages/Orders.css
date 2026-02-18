@@ -1,0 +1,118 @@
+.orders-page {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 40px 24px;
+}
+
+.orders-title {
+    font-size: 28px;
+    font-weight: 800;
+    color: #1a1a2e;
+    margin-bottom: 28px;
+}
+
+.order-success {
+    background: rgba(6, 214, 160, 0.1);
+    color: #05b488;
+    padding: 16px 20px;
+    border-radius: 12px;
+    font-size: 15px;
+    font-weight: 600;
+    margin-bottom: 24px;
+    border-left: 4px solid #06d6a0;
+}
+
+.orders-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.order-card {
+    background: white;
+    border-radius: 16px;
+    border: 1px solid #f0f0f5;
+    overflow: hidden;
+    transition: box-shadow 0.2s;
+}
+
+.order-card:hover {
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06);
+}
+
+.order-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 24px;
+    background: #f7f9fc;
+    border-bottom: 1px solid #f0f0f5;
+}
+
+.order-id {
+    font-size: 15px;
+    font-weight: 700;
+    color: #1a1a2e;
+    margin-right: 12px;
+}
+
+.order-date {
+    font-size: 13px;
+    color: #888;
+}
+
+.order-status {
+    padding: 4px 14px;
+    border-radius: 50px;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.order-items {
+    padding: 16px 24px;
+}
+
+.order-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 0;
+    border-bottom: 1px solid #f7f9fc;
+}
+
+.order-item:last-child {
+    border-bottom: none;
+}
+
+.order-item-name {
+    font-size: 14px;
+    color: #333;
+    font-weight: 500;
+}
+
+.order-item-details {
+    font-size: 13px;
+    color: #888;
+}
+
+.order-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 14px 24px;
+    background: #f7f9fc;
+    border-top: 1px solid #f0f0f5;
+    font-size: 13px;
+    color: #888;
+}
+
+.order-total {
+    font-size: 17px;
+    font-weight: 700;
+    color: #329af0;
+}
+
+.orders-loading {
+    display: flex;
+    justify-content: center;
+    padding: 100px 0;
+}

@@ -1,0 +1,249 @@
+.product-detail {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 24px;
+}
+
+.detail-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: start;
+}
+
+.detail-image-section {
+    position: sticky;
+    top: 90px;
+}
+
+.detail-image {
+    width: 100%;
+    border-radius: 20px;
+    object-fit: cover;
+    max-height: 500px;
+}
+
+.detail-placeholder {
+    width: 100%;
+    height: 420px;
+    background: linear-gradient(135deg, #f7f9fc, #eef2f7);
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 100px;
+    opacity: 0.3;
+}
+
+.detail-category {
+    display: inline-block;
+    background: linear-gradient(135deg, rgba(50, 154, 240, 0.1), rgba(168, 85, 247, 0.1));
+    color: #329af0;
+    padding: 6px 16px;
+    border-radius: 50px;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 12px;
+}
+
+.detail-info-section h1 {
+    font-size: 32px;
+    font-weight: 800;
+    color: #1a1a2e;
+    margin-bottom: 16px;
+    line-height: 1.3;
+}
+
+.detail-price {
+    font-size: 28px;
+    font-weight: 700;
+    color: #329af0;
+    margin-bottom: 4px;
+}
+
+.detail-tax {
+    font-size: 13px;
+    color: #888;
+    margin-bottom: 0;
+}
+
+.detail-divider {
+    height: 1px;
+    background: #f0f0f5;
+    margin: 24px 0;
+}
+
+.detail-description h3 {
+    font-size: 16px;
+    font-weight: 700;
+    color: #1a1a2e;
+    margin-bottom: 10px;
+}
+
+.detail-description p {
+    font-size: 15px;
+    color: #666;
+    line-height: 1.8;
+}
+
+.detail-quantity {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 24px;
+}
+
+.detail-quantity>span {
+    font-size: 15px;
+    font-weight: 600;
+    color: #333;
+}
+
+.quantity-controls {
+    display: flex;
+    align-items: center;
+    border: 2px solid #e8edf2;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.quantity-controls button {
+    width: 40px;
+    height: 40px;
+    border: none;
+    background: #f7f9fc;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background 0.2s;
+    color: #333;
+}
+
+.quantity-controls button:hover {
+    background: #e8edf2;
+}
+
+.quantity-controls span {
+    width: 50px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.detail-actions {
+    display: flex;
+    gap: 14px;
+    margin-bottom: 28px;
+}
+
+.btn-add-cart {
+    flex: 1;
+    padding: 16px;
+    background: linear-gradient(135deg, #329af0, #1a7fd4);
+    color: white;
+    border: none;
+    border-radius: 12px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.btn-add-cart:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(50, 154, 240, 0.35);
+}
+
+.btn-added {
+    background: linear-gradient(135deg, #06d6a0, #05b488) !important;
+}
+
+.btn-buy-now {
+    flex: 1;
+    padding: 16px;
+    background: linear-gradient(135deg, #1a1a2e, #16213e);
+    color: white;
+    border: none;
+    border-radius: 12px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.btn-buy-now:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(26, 26, 46, 0.3);
+}
+
+.detail-features {
+    display: flex;
+    gap: 20px;
+}
+
+.detail-feature {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 13px;
+    color: #666;
+    background: #f7f9fc;
+    padding: 10px 16px;
+    border-radius: 10px;
+}
+
+.detail-loading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 400px;
+}
+
+.spinner {
+    width: 40px;
+    height: 40px;
+    border: 4px solid #f0f0f5;
+    border-top-color: #329af0;
+    border-radius: 50%;
+    animation: spin 0.8s linear infinite;
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.detail-error {
+    text-align: center;
+    padding: 80px 24px;
+}
+
+.detail-error h2 {
+    margin-bottom: 16px;
+    color: #333;
+}
+
+@media (max-width: 768px) {
+    .detail-container {
+        grid-template-columns: 1fr;
+        gap: 32px;
+    }
+
+    .detail-image-section {
+        position: static;
+    }
+
+    .detail-info-section h1 {
+        font-size: 24px;
+    }
+
+    .detail-features {
+        flex-wrap: wrap;
+    }
+
+    .detail-actions {
+        flex-direction: column;
+    }
+}
